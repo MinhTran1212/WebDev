@@ -4,3 +4,5 @@ const viewInput = document.querySelector('#amount')
 const btnAdd = document.querySelector('#btn-add')
 const btnSub = document.querySelector('#btn-sub')
 const sumSpan = document.querySelector('#sum')
+
+    
