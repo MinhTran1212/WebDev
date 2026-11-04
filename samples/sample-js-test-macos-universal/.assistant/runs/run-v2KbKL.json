@@ -1,0 +1,522 @@
+{
+  "config": {
+    "configFile": "/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/framework/exam-assistant.config.ts",
+    "rootDir": "/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 105000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests",
+        "testIgnore": [
+          "demo/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 5000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 3,
+    "webServer": {
+      "command": "node exam-assistant-server.mjs",
+      "cwd": "/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/framework",
+      "url": "http://127.0.0.1:50494/__health",
+      "reuseExistingServer": false,
+      "timeout": 10000
+    }
+  },
+  "suites": [
+    {
+      "title": "test.spec.ts",
+      "file": "test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "1. feladat - Könyvtári körkép / Task 1 - Library Overview",
+          "file": "test.spec.ts",
+          "line": 74,
+          "column": 6,
+          "specs": [
+            {
+              "title": "1a",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-b7bae0e72a7dba848ea5",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "1b",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-53e9df1795378ae024f7",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "1c",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-cefe1d3babb303ba0a9c",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "1d",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-3ad131d461fbc3a66d24",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "1e",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-88de613773c56dd90f1d",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "1f",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-1551ad8f266f00bdfbde",
+              "file": "test.spec.ts",
+              "line": 83,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner",
+          "file": "test.spec.ts",
+          "line": 159,
+          "column": 6,
+          "specs": [
+            {
+              "title": "2a",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-3daace08a557f20ac67b",
+              "file": "test.spec.ts",
+              "line": 163,
+              "column": 7
+            },
+            {
+              "title": "2b",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-8bab794a27af3ac0965a",
+              "file": "test.spec.ts",
+              "line": 170,
+              "column": 7
+            },
+            {
+              "title": "2c",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-609b5013f2481db34b36",
+              "file": "test.spec.ts",
+              "line": 202,
+              "column": 7
+            },
+            {
+              "title": "2d",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-297b1f89915b98c829de",
+              "file": "test.spec.ts",
+              "line": 220,
+              "column": 7
+            },
+            {
+              "title": "2e",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-41f9a6d37c36c79f5492",
+              "file": "test.spec.ts",
+              "line": 239,
+              "column": 7
+            },
+            {
+              "title": "2f",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-1ecec06caf4fe2e80b73",
+              "file": "test.spec.ts",
+              "line": 267,
+              "column": 7
+            },
+            {
+              "title": "2g",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-e9f8a4256ebab6539979",
+              "file": "test.spec.ts",
+              "line": 302,
+              "column": 7
+            },
+            {
+              "title": "2h",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-0c055cb0808d2dcbfca2",
+              "file": "test.spec.ts",
+              "line": 377,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back",
+          "file": "test.spec.ts",
+          "line": 449,
+          "column": 6,
+          "specs": [
+            {
+              "title": "3a",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-27d2157122f8520a2317",
+              "file": "test.spec.ts",
+              "line": 450,
+              "column": 7
+            },
+            {
+              "title": "3b",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-80dd12b057929cc33b43",
+              "file": "test.spec.ts",
+              "line": 459,
+              "column": 7
+            },
+            {
+              "title": "3c",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-0b276ff4fdf9002bc5f5",
+              "file": "test.spec.ts",
+              "line": 487,
+              "column": 7
+            },
+            {
+              "title": "3d",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-0bcea95a02c301a18f62",
+              "file": "test.spec.ts",
+              "line": 523,
+              "column": 7
+            },
+            {
+              "title": "3e",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-85569232407967f88837",
+              "file": "test.spec.ts",
+              "line": 551,
+              "column": 7
+            },
+            {
+              "title": "3f",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-1ea8e5581a0502e8fcae",
+              "file": "test.spec.ts",
+              "line": 590,
+              "column": 7
+            },
+            {
+              "title": "3g",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b72ba50710186a3d173d-631e715b8ce6eb03c091",
+              "file": "test.spec.ts",
+              "line": 651,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-31T11:55:30.086Z",
+    "duration": 18.833000000000027,
+    "expected": 0,
+    "skipped": 21,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,54 @@
+[WebServer] (node:67130) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 3 workers
+
+(node:67132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › ../test.spec.ts:163:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2a (519ms)
+  ✓  1 [chromium] › ../test.spec.ts:202:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2c (704ms)
+  ✓  2 [chromium] › ../test.spec.ts:170:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2b (795ms)
+  ✓  4 [chromium] › ../test.spec.ts:220:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2d (266ms)
+  ✓  5 [chromium] › ../test.spec.ts:239:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2e (462ms)
+  ✓  6 [chromium] › ../test.spec.ts:267:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2f (508ms)
+  ✓  7 [chromium] › ../test.spec.ts:302:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2g (1.2s)
+  ✘  8 [chromium] › ../test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h (1.3s)
+
+
+  1) [chromium] › ../test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h 
+
+    Error: "h. Vezérlők letiltása" nem teljesült
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+       at framework/lib/grading.ts:76
+
+      74 |     // jelezzük itt - a tényleges hibaszöveget a `hardError`-ból vesszük,
+      75 |     // hogy ne duplázódjon bele ennek az önmagában értelmetlen toBe-nek a diffje.
+    > 76 |     expect.soft(false, `"${title}" nem teljesült`).toBe(true);
+         |                                                    ^
+      77 |   }
+      78 |
+      79 |   // A hard hiba esetén a fenti expect.soft éppen egy plusz (szintetikus)
+        at runTrackedStep (/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/framework/lib/grading.ts:76:52)
+        at binaryTask (/Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/framework/lib/grading.ts:99:30)
+        at /Users/MAC/CS/ELTE/Web programming/samples/sample-js-test-macos-universal/.assistant/tester/tests/test.spec.ts:378:5
+
+    Error Context: ../test-results/test-2-feladat---Olvasóest-f6651--Reading-Evening-Planner-2h-chromium/error-context.md
+
+  1 failed
+    [chromium] › ../test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h 
+  7 passed (4.0s)

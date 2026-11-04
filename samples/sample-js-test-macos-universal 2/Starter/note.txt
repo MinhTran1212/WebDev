@@ -1,0 +1,27 @@
+remember li need to be access through innerHTML or textContent 
+change value as src and so on, not innerHTML for element that has tag (image, text)
+${pacec * 20}px`
+const li = document.createElement("li");
+li.innerHTML = title.trim();
+
+forEach({});
+
+delegate(table, '.book', 'click', (event, book) => {
+  
+});
+
+  if (!cell.classList.contains("shelf")){. <-- cell
+    if (!cellquerySelector()){              <-- element trong cell (td)
+      
+    }
+  }
+
+book.closest('.shelf')
+
+querySelector	    CSS Selector search	            document.querySelector('.book')
+querySelectorAll	CSS Selector search	            table.querySelectorAll('.book')
+element.closest	    CSS Selector ancestor search	target.closest('.book')
+element.matches	    CSS Selector check	            if (element.matches('.book'))
+delegate(..., child, ...)	Takes a CSS selector as 2nd argument	delegate(table, '.book', 'click', fn)
+
+dont use dot when add classList

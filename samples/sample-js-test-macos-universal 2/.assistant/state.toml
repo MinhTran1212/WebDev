@@ -1,0 +1,7 @@
+name = "Tran Luong Nhat Minh"
+neptun = "A9CRQY"
+
+[setup]
+browser = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+browser_version = "156.0.8078.79"
+self_check = "ok"

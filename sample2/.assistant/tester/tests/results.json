@@ -1,0 +1,2898 @@
+{
+  "summary": {
+    "status": "passed",
+    "total": 23,
+    "passed": 23,
+    "failed": 0,
+    "earnedPoints": 40,
+    "maxPoints": 40,
+    "percentage": 100
+  },
+  "suites": [
+    {
+      "title": "chromium",
+      "tests": [],
+      "suites": [
+        {
+          "title": "test.spec.ts",
+          "tests": [],
+          "suites": [
+            {
+              "title": "1. feladat - Űrmissziók / Task 1 - Space Missions",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "1a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Küldetések száma / a. Number of missions",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Küldetések száma / a. Number of missions",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskA",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskA",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskA",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1b",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "b. Volt-e sikertelen küldetés / b. Any unsuccessful mission",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "b. Volt-e sikertelen küldetés / b. Any unsuccessful mission",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskB",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskB",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskB",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1c",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "c. Minden küldetésen volt eszköz / c. Every mission used an instrument",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "c. Minden küldetésen volt eszköz / c. Every mission used an instrument",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskC",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskC",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskC",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1d",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "d. Sikeres NASA-küldetések / d. Successful NASA missions",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "d. Sikeres NASA-küldetések / d. Successful NASA missions",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskD",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskD",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskD",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1e",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "e. Kamerát használó küldetések / e. Missions that used a camera",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "e. Kamerát használó küldetések / e. Missions that used a camera",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskE",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskE",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskE",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1f",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "f. Legdrágább sikeres küldetés / f. Most expensive successful mission",
+                      "status": "passed",
+                      "score": 3,
+                      "maxScore": 3,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "f. Legdrágább sikeres küldetés / f. Most expensive successful mission",
+                          "success": true,
+                          "points": 3,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#taskF",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskF",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#taskF",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "2. feladat - Felderítő útvonaltervező / Task 2 - Exploration Route Planner",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "2a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Úti cél felvétele / a. Add target to the route",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Úti cél felvétele / a. Add target to the route",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#route li')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2b",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "b. trim, üres kihagyása, mező ürítése / b. Trim, skip empty, clear input",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "b. trim, üres kihagyása, mező ürítése / b. Trim, skip empty, clear input",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#route li after '  Jupiter  ' locator('#route li')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#target-input cleared locator('#target-input')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "no item for empty / whitespace input locator('#route li')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2c",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "c. A szonda kapacitása / c. Probe capacity",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-9-1",
+                          "name": "Célok száma / Number of targets",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "after 1 target locator('#route-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "after 3 targets locator('#route-count')",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-9-2",
+                          "name": "Gomb letiltása 5 célnál / Button disabled at 5 targets",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "with 4 targets locator('#add-target')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "with 5 targets locator('#add-target')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2d",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "d. Szonda képe / d. Probe image",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "d. Szonda képe / d. Probe image",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "src for pioneer locator('#probe-image')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "src for new-horizons locator('#probe-image')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "src for voyager locator('#probe-image')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2e",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "e. Szonda a kezdőcellán / e. Probe at start position",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "e. Szonda a kezdőcellán / e. Probe at start position",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "probe class must be added by index.js, not in index.html",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after load locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after load locator('#sector tr').first().locator('td').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after load)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2f",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "f. A szonda mozgatása / f. Moving the probe",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-12-1",
+                          "name": "Lépés jobbra / Move right",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "probe count after → locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after → locator('#sector tr').first().locator('td').nth(1)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after →)",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-12-2",
+                          "name": "Mind a négy irány / All four directions",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓ locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓ locator('#sector tr').nth(1).locator('td').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓→ locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓→ locator('#sector tr').nth(1).locator('td').nth(1)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓→)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓→↑ locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓→↑ locator('#sector tr').first().locator('td').nth(1)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓→↑)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓→↑← locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓→↑← locator('#sector tr').first().locator('td').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓→↑←)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2g",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "g. Nem lehetséges lépés / g. Blocked moves",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-13-1",
+                          "name": "Szonda nem hagyja el a térképet / Probe stays on the map",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↑← at the top-left corner locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↑← at the top-left corner locator('#sector tr').first().locator('td').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↑← at the top-left corner)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after 7× → (right edge) locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after 7× → (right edge) locator('#sector tr').first().locator('td').nth(6)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after 7× → (right edge))",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after 7× ↓ (bottom edge) locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after 7× ↓ (bottom edge) locator('#sector tr').nth(6).locator('td').nth(6)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after 7× ↓ (bottom edge))",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-13-2",
+                          "name": "Aszteroidára nem lép / Asteroids block the probe",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "probe count after →→→ (asteroid at row 0, col 3) locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after →→→ (asteroid at row 0, col 3) locator('#sector tr').first().locator('td').nth(2)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after →→→ (asteroid at row 0, col 3))",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓→ (asteroid at row 1, col 3) locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓→ (asteroid at row 1, col 3) locator('#sector tr').nth(1).locator('td').nth(2)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓→ (asteroid at row 1, col 3))",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe count after ↓ onto a newly placed asteroid locator('#sector .probe')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "probe position after ↓ onto a newly placed asteroid locator('#sector tr').first().locator('td').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "map cells keep asteroid / planet / data-name (after ↓ onto a newly placed asteroid)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2h",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "h. A küldetés befejezése / h. Completing the mission",
+                      "status": "passed",
+                      "score": 4,
+                      "maxScore": 4,
+                      "parts": [
+                        {
+                          "id": "task-14-1",
+                          "name": "Meglátogatott célok / Visited targets",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Mars visited locator('#route li').first()",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "mars not visited locator('#route li').nth(1)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Pluto not visited locator('#route li').nth(2)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Vesta-biqe (new planet) visited locator('#route li').first()",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-14-2",
+                          "name": "Küldetés teljesítve üzenet / Mission complete message",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "#status before any visit locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#status after visiting only Vesta-9wo0 locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#status after visiting every target locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#status after visiting only Mars locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#status after visiting every target (reverse order) locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "#status while Pluto (not on the map) is not visited locator('#status')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "3. feladat - Naprendszer-vezérlő / Task 3 - Solar System Control",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "3a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Vezérlők a bolygónevekkel / a. Planet controls with names",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Vezérlők a bolygónevekkel / a. Planet controls with names",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Mercury locator('#input-fields div.planet-control').first().locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Venus locator('#input-fields div.planet-control').nth(1).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Earth locator('#input-fields div.planet-control').nth(2).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Mars locator('#input-fields div.planet-control').nth(3).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Jupiter locator('#input-fields div.planet-control').nth(4).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Saturn locator('#input-fields div.planet-control').nth(5).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Uranus locator('#input-fields div.planet-control').nth(6).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Neptune locator('#input-fields div.planet-control').nth(7).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Vulcan locator('#input-fields div.planet-control').first().locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Ceres locator('#input-fields div.planet-control').nth(1).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Phaethon locator('#input-fields div.planet-control').nth(2).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Theia locator('#input-fields div.planet-control').nth(3).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Nibiru locator('#input-fields div.planet-control').nth(4).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Planet Nine locator('#input-fields div.planet-control').nth(5).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Pyrois locator('#input-fields div.planet-control').first().locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Zephyr locator('#input-fields div.planet-control').nth(1).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Glacia locator('#input-fields div.planet-control').nth(2).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Pallas locator('#input-fields div.planet-control').nth(3).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Kronos locator('#input-fields div.planet-control').nth(4).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Eris locator('#input-fields div.planet-control').nth(5).locator('h3')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "h3 of Ferrum locator('#input-fields div.planet-control').nth(6).locator('h3')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3b",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "b. Típus legördülő lista / b. Type dropdown",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-16-1",
+                          "name": "Típus opciók / Type options",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Mercury) locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Mercury locator('#input-fields div.planet-control').first().locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Venus) locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Venus locator('#input-fields div.planet-control').nth(1).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Earth) locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Earth locator('#input-fields div.planet-control').nth(2).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Mars) locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Mars locator('#input-fields div.planet-control').nth(3).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Jupiter) locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Jupiter locator('#input-fields div.planet-control').nth(4).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Saturn) locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Saturn locator('#input-fields div.planet-control').nth(5).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Uranus) locator('#input-fields div.planet-control').nth(6).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Uranus locator('#input-fields div.planet-control').nth(6).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Neptune) locator('#input-fields div.planet-control').nth(7).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Neptune locator('#input-fields div.planet-control').nth(7).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Vulcan) locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Vulcan locator('#input-fields div.planet-control').first().locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Ceres) locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Ceres locator('#input-fields div.planet-control').nth(1).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Phaethon) locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Phaethon locator('#input-fields div.planet-control').nth(2).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Theia) locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Theia locator('#input-fields div.planet-control').nth(3).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Nibiru) locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Nibiru locator('#input-fields div.planet-control').nth(4).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Planet Nine) locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Planet Nine locator('#input-fields div.planet-control').nth(5).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Pyrois) locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Pyrois locator('#input-fields div.planet-control').first().locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Zephyr) locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Zephyr locator('#input-fields div.planet-control').nth(1).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Glacia) locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Glacia locator('#input-fields div.planet-control').nth(2).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Pallas) locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Pallas locator('#input-fields div.planet-control').nth(3).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Kronos) locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Kronos locator('#input-fields div.planet-control').nth(4).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Eris) locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Eris locator('#input-fields div.planet-control').nth(5).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "select data-index (Ferrum) locator('#input-fields div.planet-control').nth(6).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option texts of Ferrum locator('#input-fields div.planet-control').nth(6).locator('select.planet-color').locator('option')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "option values of Ferrum",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-16-2",
+                          "name": "Saját típus kiválasztva / Own type selected",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Mercury locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Venus locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Earth locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Mars locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Jupiter locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Saturn locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Uranus locator('#input-fields div.planet-control').nth(6).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Neptune locator('#input-fields div.planet-control').nth(7).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Vulcan locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Ceres locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Phaethon locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Theia locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Nibiru locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Planet Nine locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Pyrois locator('#input-fields div.planet-control').first().locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Zephyr locator('#input-fields div.planet-control').nth(1).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Glacia locator('#input-fields div.planet-control').nth(2).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Pallas locator('#input-fields div.planet-control').nth(3).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Kronos locator('#input-fields div.planet-control').nth(4).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Eris locator('#input-fields div.planet-control').nth(5).locator('select.planet-color')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "selected type of Ferrum locator('#input-fields div.planet-control').nth(6).locator('select.planet-color')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3c",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "c. Pálya csúszka / c. Orbit slider",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "c. Pálya csúszka / c. Orbit slider",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Mercury locator('#input-fields div.planet-control').first().locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Venus locator('#input-fields div.planet-control').nth(1).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Earth locator('#input-fields div.planet-control').nth(2).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Mars locator('#input-fields div.planet-control').nth(3).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Jupiter locator('#input-fields div.planet-control').nth(4).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Saturn locator('#input-fields div.planet-control').nth(5).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Uranus locator('#input-fields div.planet-control').nth(6).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Neptune locator('#input-fields div.planet-control').nth(7).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Vulcan locator('#input-fields div.planet-control').first().locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Ceres locator('#input-fields div.planet-control').nth(1).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Phaethon locator('#input-fields div.planet-control').nth(2).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Theia locator('#input-fields div.planet-control').nth(3).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Nibiru locator('#input-fields div.planet-control').nth(4).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Planet Nine locator('#input-fields div.planet-control').nth(5).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Pyrois locator('#input-fields div.planet-control').first().locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Zephyr locator('#input-fields div.planet-control').nth(1).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Glacia locator('#input-fields div.planet-control').nth(2).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Pallas locator('#input-fields div.planet-control').nth(3).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Kronos locator('#input-fields div.planet-control').nth(4).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Eris locator('#input-fields div.planet-control').nth(5).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-orbit of Ferrum locator('#input-fields div.planet-control').nth(6).locator('input.planet-orbit')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider of Ferrum",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3d",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "d. Gyűrűk jelölőnégyzet / d. Rings checkbox",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "d. Gyűrűk jelölőnégyzet / d. Rings checkbox",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Mercury locator('#input-fields div.planet-control').first().locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Venus locator('#input-fields div.planet-control').nth(1).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Earth locator('#input-fields div.planet-control').nth(2).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Mars locator('#input-fields div.planet-control').nth(3).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Jupiter locator('#input-fields div.planet-control').nth(4).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Saturn locator('#input-fields div.planet-control').nth(5).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Uranus locator('#input-fields div.planet-control').nth(6).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Neptune locator('#input-fields div.planet-control').nth(7).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Vulcan locator('#input-fields div.planet-control').first().locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Ceres locator('#input-fields div.planet-control').nth(1).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Phaethon locator('#input-fields div.planet-control').nth(2).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Theia locator('#input-fields div.planet-control').nth(3).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Nibiru locator('#input-fields div.planet-control').nth(4).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Planet Nine locator('#input-fields div.planet-control').nth(5).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Pyrois locator('#input-fields div.planet-control').first().locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Zephyr locator('#input-fields div.planet-control').nth(1).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Glacia locator('#input-fields div.planet-control').nth(2).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Pallas locator('#input-fields div.planet-control').nth(3).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Kronos locator('#input-fields div.planet-control').nth(4).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Eris locator('#input-fields div.planet-control').nth(5).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "input.planet-rings of Ferrum locator('#input-fields div.planet-control').nth(6).locator('input.planet-rings')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox of Ferrum",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3e",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "e. Bolygó span / e. Planet span",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-19-1",
+                          "name": "Stílusosztályok / Classes",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Mercury locator('#planets span.planet[data-index=\"0\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Venus locator('#planets span.planet[data-index=\"1\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Earth locator('#planets span.planet[data-index=\"2\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Mars locator('#planets span.planet[data-index=\"3\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Jupiter locator('#planets span.planet[data-index=\"4\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Saturn locator('#planets span.planet[data-index=\"5\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Uranus locator('#planets span.planet[data-index=\"6\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Neptune locator('#planets span.planet[data-index=\"7\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Vulcan locator('#planets span.planet[data-index=\"0\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Ceres locator('#planets span.planet[data-index=\"1\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Phaethon locator('#planets span.planet[data-index=\"2\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Theia locator('#planets span.planet[data-index=\"3\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Nibiru locator('#planets span.planet[data-index=\"4\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Planet Nine locator('#planets span.planet[data-index=\"5\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Pyrois locator('#planets span.planet[data-index=\"0\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Zephyr locator('#planets span.planet[data-index=\"1\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Glacia locator('#planets span.planet[data-index=\"2\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Pallas locator('#planets span.planet[data-index=\"3\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Kronos locator('#planets span.planet[data-index=\"4\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Eris locator('#planets span.planet[data-index=\"5\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "title of planet Ferrum locator('#planets span.planet[data-index=\"6\"]')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of Ferrum",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of Ferrum",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-19-2",
+                          "name": "Pozíció és méret / Position and size",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Mercury",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Venus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Earth",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Mars",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Jupiter",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Saturn",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Uranus",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Neptune",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Vulcan",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Ceres",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Phaethon",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Theia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Nibiru",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Planet Nine",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Pyrois",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Zephyr",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Glacia",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Pallas",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Kronos",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Eris",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "style of Ferrum",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3f",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "f. Csúszka mozgatja a bolygót / f. Slider moves the planet",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "f. Csúszka mozgatja a bolygót / f. Slider moves the planet",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #0 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #1 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #2 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #3 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #4 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #5 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #6 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #7 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #0 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #1 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #2 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #3 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #4 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #5 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #0 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #1 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #2 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #3 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #4 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #5 after moving every slider",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left of planet #6 after moving every slider",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3g",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "g. Lista módosítja a típust / g. Dropdown changes the type",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "g. Lista módosítja a típust / g. Dropdown changes the type",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 1",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 2",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 1",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 2",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 1",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* class of planet #0 after selecting 2",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3h",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "h. Jelölőnégyzet kapcsolja a gyűrűt / h. Checkbox toggles rings",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "h. Jelölőnégyzet kapcsolja a gyűrűt / h. Checkbox toggles rings",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 1 (checked=true)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 2 (checked=false)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 1 (checked=true)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 2 (checked=false)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 1 (checked=true)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings class of planet #0 after click 2 (checked=false)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3i",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "i. Delegálás / i. Delegation",
+                      "status": "passed",
+                      "score": 3,
+                      "maxScore": 3,
+                      "parts": [
+                        {
+                          "id": "task-23-1",
+                          "name": "Csúszka / Slider",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left after moving a replaced slider (only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left after moving a replaced slider (only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "slider to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "left after moving a replaced slider (only a delegated handler can react)",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-23-2",
+                          "name": "Legördülő lista / Dropdown",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "dropdown to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* after a replaced dropdown (only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "dropdown to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* after a replaced dropdown (only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "dropdown to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "type-* after a replaced dropdown (only a delegated handler can react)",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-23-3",
+                          "name": "Jelölőnégyzet / Checkbox",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings after clicking a replaced checkbox (checked=false, only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings after clicking a replaced checkbox (checked=true, only a delegated handler can react)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of .planet-control elements locator('#input-fields div.planet-control')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "number of span.planet elements in #planets locator('#planets span.planet')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "checkbox to clone",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "rings after clicking a replaced checkbox (checked=false, only a delegated handler can react)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

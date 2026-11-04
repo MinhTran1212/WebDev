@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lands of Nameless King</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="start-screen">
+        <h1>Lands of Nameless King</h1>
+        <div class="form-group">
+            <label>Player Name:</label>
+            <input type="text" class="player-name-input" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Difficulty:</label>
+            <select class="level-select">
+                <option value="easy">Easy (5x5)</option>
+                <option value="medium">Medium (7x7)</option>
+                <option value="hard">Hard (10x10)</option>
+            </select>
+        </div>
+        <div class="btn-group">
+            <button class="start-game-btn">Start Game</button>
+            <button class="rules-btn secondary-btn">View Rules</button>
+        </div>
+
+        <div class="rules-modal" style="display: none;">
+            <h2>Game Rules</h2>
+            <ul>
+                <li><strong>Goal:</strong> Divide the land so each house receives a connected property equal to the
+                    number on the house (including the house cell).</li>
+                <li><strong>Controls:</strong> Left-click or drag to build/erase walls. Right-click to mark/unmark
+                    property cells.</li>
+                <li><strong>One house per property:</strong> Two houses cannot belong to the same property.</li>
+                <li><strong>Separated properties:</strong> Different properties must not touch horizontally or
+                    vertically.</li>
+                <li><strong>Wall system:</strong> All walls must connect horizontally or vertically into a single
+                    network.</li>
+                <li><strong>No solid walls:</strong> Walls cannot completely occupy any 2x2 area.</li>
+            </ul>
+            <button class="close-rules-btn secondary-btn">Close Rules</button>
+        </div>
+
+
+        <div class="saved-games-section">
+            <h2>Saved Games</h2>
+            <div class="saved-games-list"></div>
+        </div>
+
+        <div class="leaderboard-section">
+            <h2>Leaderboards</h2>
+            <h3>Easy (5x5)</h3>
+            <ol id="leaderboard-easy"></ol>
+            <h3>Medium (7x7)</h3>
+            <ol id="leaderboard-medium"></ol>
+            <h3>Hard (10x10)</h3>
+            <ol id="leaderboard-hard"></ol>
+        </div>
+    </div>
+
+    <div class="game-screen" style="display: none;">
+        <div class="game-info">
+            <span class="player-name">Player: </span>
+            <span class="timer">Time: 00:00</span>
+        </div>
+        <div class="victory-message" style="display: none;"></div>
+        <div class="grid-board"></div>
+        <div class="btn-group" style="margin-top: 12px;">
+            <button class="save-game-btn">Save Game</button>
+            <button class="back-to-menu-btn secondary-btn">Back to Menu</button>
+            <span class="save-feedback"
+                style="display: none; color: #22c55e; font-weight: bold; align-self: center;">Game Saved!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

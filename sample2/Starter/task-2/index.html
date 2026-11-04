@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. feladat - Felderítő útvonaltervező / Task 2. - Exploration Route Planner</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1>2. feladat - Felderítő útvonaltervező / Task 2. - Exploration Route Planner</h1>
+
+    <main>
+      <section class="panel">
+        <h2>1. Repülési terv / Flight plan</h2>
+        <p class="hint">
+          Válaszd ki, mely bolygókat látogassa meg a szonda!<br />
+          Choose which planets the probe should visit!
+        </p>
+
+        <div class="row">
+          <label for="target-input">Úti cél / Target:</label>
+          <input type="text" id="target-input" list="known-planets" placeholder="pl. / e.g. Mars" />
+          <button type="button" id="add-target">Felvétel / Add</button>
+        </div>
+
+        <datalist id="known-planets">
+          <option value="Mars"></option>
+          <option value="Jupiter"></option>
+          <option value="Ceres"></option>
+          <option value="Eris"></option>
+          <option value="Sedna"></option>
+        </datalist>
+
+        <p>Célok száma / Number of targets: <span id="route-count">0</span> / 5</p>
+        <ol id="route"></ol>
+
+        <h2>Szonda / Probe</h2>
+
+        <div class="row">
+          <label for="probe-select">Típus / Type:</label>
+          <select id="probe-select">
+            <option value="voyager">Voyager</option>
+            <option value="pioneer">Pioneer</option>
+            <option value="new-horizons">New Horizons</option>
+          </select>
+        </div>
+
+        <img id="probe-image" src="img/voyager.svg" alt="Szonda / Probe" />
+      </section>
+
+      <section class="panel">
+        <h2>2. Szektortérkép / Sector map</h2>
+        <p class="hint">
+          A szektor ismert bolygói. Vezesd el a szondát a tervben szereplő bolygókhoz!<br />
+          Known planets of the sector. Fly the probe to the planets in your flight plan!
+        </p>
+
+        <table id="sector">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td></td>
+            <td class="planet" data-name="Ceres"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="planet" data-name="Mars"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="asteroid"></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td class="planet" data-name="Jupiter"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="planet" data-name="Eris"></td>
+            <td class="asteroid"></td>
+            <td></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="asteroid"></td>
+            <td class="planet" data-name="Sedna"></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div id="controls">
+          <button type="button" id="move-up">↑</button>
+          <button type="button" id="move-left">←</button>
+          <button type="button" id="move-down">↓</button>
+          <button type="button" id="move-right">→</button>
+        </div>
+
+        <p id="status"></p>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

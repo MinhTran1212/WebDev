@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner
+    </title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner</h1>
+    <div id="planner">
+      <section>
+        <h2>Az est programja / Evening program</h2>
+        <label>Cím / Title <input id="work-input" type="text" /></label>
+        <button id="add-work" type="button">Hozzáadás / Add</button>
+        <p>Címek: / Titles: <span id="work-count">0</span> / 4</p>
+        <ol id="reading-list"></ol>
+      </section>
+      <section>
+        <h2>Közös felolvasási kötet / Shared reading volume</h2>
+        <label
+          >Kiadás / Edition
+          <select id="edition">
+            <option value="img/hamlet.svg" data-pages="160">
+              William Shakespeare: Hamlet
+            </option>
+            <option value="img/metamorphosis.svg" data-pages="96">
+              Franz Kafka: The Metamorphosis
+            </option>
+            <option value="img/emma.svg" data-pages="544">
+              Jane Austen: Emma
+            </option>
+          </select></label
+        >
+        <img
+          id="cover"
+          src="img/hamlet.svg"
+          alt="William Shakespeare: Hamlet"
+          width="120"
+          height="168"
+        />
+      </section>
+      <section>
+        <h2>Idő és tempó / Time and pace</h2>
+        <div class="settings">
+          <div class="setting-card">
+            <label
+              >Időkeret / Available time
+              <input id="minutes" type="range" min="30" max="240" value="60" />
+              <span id="minutes-value">60</span> perc / minutes</label
+            >
+            <div class="illustration">
+              <div id="time-bar" style="height: 60px"></div>
+            </div>
+          </div>
+          <div class="setting-card">
+            <label
+              >Tempó / Pace
+              <input id="pace" type="range" min="1" max="6" value="2" />
+              <span id="pace-value">2</span> oldal/perc / pages/minute</label
+            >
+            <div class="illustration">
+              <div class="open-book">
+                <span class="page" style="width: 40px"></span
+                ><span class="page" style="width: 40px"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="check" type="button">
+          Program ellenőrzése / Check program
+        </button>
+        <p id="status" role="status"></p>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

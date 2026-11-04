@@ -1,0 +1,7 @@
+{
+  "name": "exam-assistant-tester",
+  "private": true,
+  "dependencies": {
+    "@playwright/test": "1.58.2"
+  }
+}

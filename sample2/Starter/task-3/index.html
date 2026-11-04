@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      3. feladat - Naprendszer-vezérlő / Task 3. - Solar System Control
+    </title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1>3. feladat - Naprendszer-vezérlő / Task 3. - Solar System Control</h1>
+
+    <main>
+      <section class="panel">
+        <h2>Naprendszer / Solar system</h2>
+        <p class="hint">
+          A bolygók távolsága a Naptól (pixelben) / Distance of the planets from
+          the Sun (in pixels)
+        </p>
+
+        <div id="planets">
+          <div class="sun"></div>
+          <!--
+            Minta / Sample:
+            <span class="planet type-0" data-index="3" title="Mars" style="left: 106px; width: 12px; height: 12px"></span>
+            <span class="planet type-1 rings" data-index="4" title="Jupiter" style="left: 195px; width: 36px; height: 36px"></span>
+          -->
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Vezérlőpult / Control panel</h2>
+
+        <div id="input-fields">
+          <!--
+            Minta / Sample:
+            <div class="planet-control">
+              <h3>Mars</h3>
+              <select class="planet-color" data-index="3">
+                <option value="0">rocky planet</option>
+                <option value="1">gas giant</option>
+                <option value="2">ice giant</option>
+              </select>
+              <input type="range" class="planet-orbit" data-index="3" min="0" max="500" value="106" />
+              <label>
+                <input type="checkbox" class="planet-rings" data-index="3" />
+                Gyűrűk / Rings
+              </label>
+            </div>
+          -->
+        </div>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

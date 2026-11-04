@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #444;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+#map {
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+#map td {
+  min-width: 170px;
+  height: 105px;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 6px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#map td:hover {
+  background-color: #f5f5f5;
+}
+
+#map td.shelf {
+  background-color: #e6f7ff;
+}
+
+.shelf::before {
+  content: attr(data-author);
+  display: block;
+  color: #555;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.book {
+  display: inline-block;
+  min-height: 45px;
+  max-width: 160px;
+  background-color: #e6f7ff;
+  overflow-wrap: anywhere;
+  font: inherit;
+  color: #333;
+  border: 2px solid #ccc;
+  padding: 4px 8px;
+  margin: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book::after {
+  content: attr(data-author);
+  display: block;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.book.selected {
+  outline: 3px solid #0099cc;
+  outline-offset: 1px;
+}
+
+.shelf .book {
+  cursor: default;
+}
+
+body {
+  overflow-x: auto;
+}
+
+#status {
+  font-weight: bold;
+  color: #2b9b41;
+  min-height: 1.6em;
+}

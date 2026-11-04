@@ -1,0 +1,23 @@
+Listing tests:
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1a
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1b
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1c
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1d
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1e
+  [chromium] › test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1f
+  [chromium] › test.spec.ts:163:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2a
+  [chromium] › test.spec.ts:170:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2b
+  [chromium] › test.spec.ts:202:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2c
+  [chromium] › test.spec.ts:220:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2d
+  [chromium] › test.spec.ts:239:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2e
+  [chromium] › test.spec.ts:267:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2f
+  [chromium] › test.spec.ts:302:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2g
+  [chromium] › test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h
+  [chromium] › test.spec.ts:450:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3a
+  [chromium] › test.spec.ts:459:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3b
+  [chromium] › test.spec.ts:487:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3c
+  [chromium] › test.spec.ts:523:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3d
+  [chromium] › test.spec.ts:551:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3e
+  [chromium] › test.spec.ts:590:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3f
+  [chromium] › test.spec.ts:651:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3g
+Total: 21 tests in 1 file

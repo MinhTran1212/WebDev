@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELTE Web Programming - Interactive Exam Recall Trainer</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    .tab-btn.active {
+      border-bottom-width: 3px;
+      border-color: #3b82f6;
+      color: #3b82f6;
+      font-weight: 700;
+    }
+    .flashcard {
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .flashcard-inner {
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+    }
+    .flashcard.flipped .flashcard-inner {
+      transform: rotateY(180deg);
+    }
+    .flashcard-front, .flashcard-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .flashcard-back {
+      transform: rotateY(180deg);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8 font-sans">
+  <div class="max-w-6xl mx-auto space-y-6">
+    
+    <!-- Header -->
+    <header class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">ELTE Midterm / Exam Practice</span>
+          <span class="text-xs text-slate-400">Total: 40 Points (12 + 14 + 14)</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">JavaScript Exam Recall Trainer</h1>
+        <p class="text-slate-400 text-sm mt-1">Deep-dive revision, interactive simulator, spot-the-bug challenges, and active recall testing.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-slate-900/80 border border-slate-700 px-4 py-2 rounded-xl text-center">
+          <div class="text-xs text-slate-400 font-semibold uppercase">Recall Score</div>
+          <div id="global-score" class="text-xl font-black text-emerald-400">0 / 0</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex border-b border-slate-700 space-x-2 md:space-x-8 overflow-x-auto pb-1 text-sm md:text-base">
+      <button onclick="switchTab('tab-t1')" class="tab-btn active py-3 px-2 text-slate-400 hover:text-white transition whitespace-nowrap" id="btn-tab-t1">
+        📚 Task 1: Array Algorithms (12 pts)
+      </button>
+      <button onclick="switchTab('tab-t2')" class="tab-btn py-3 px-2 text-slate-400 hover:text-white transition whitespace-nowrap" id="btn-tab-t2">
+        🎛️ Task 2: Forms & Live Events (14 pts)
+      </button>
+      <button onclick="switchTab('tab-t3')" class="tab-btn py-3 px-2 text-slate-400 hover:text-white transition whitespace-nowrap" id="btn-tab-t3">
+        🗺️ Task 3: 2D Grids & Delegation (14 pts)
+      </button>
+      <button onclick="switchTab('tab-quiz')" class="tab-btn py-3 px-2 text-slate-400 hover:text-white transition whitespace-nowrap" id="btn-tab-quiz">
+        🧠 Trap Hunter & Final Exam Quiz
+      </button>
+    </nav>
+
+    <!-- TAB 1: TASK 1 (ARRAY METHODS) -->
+    <div id="tab-t1" class="tab-content space-y-6">
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+          <span>📚 Core Concept: Higher-Order Functions without Loops</span>
+        </h2>
+        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+          In ELTE exams, Task 1 strictly tests your ability to query complex nested objects using functional array methods:
+          <code class="bg-slate-900 text-blue-400 px-1 py-0.5 rounded">filter</code>, 
+          <code class="bg-slate-900 text-blue-400 px-1 py-0.5 rounded">map</code>, 
+          <code class="bg-slate-900 text-blue-400 px-1 py-0.5 rounded">some</code>, 
+          <code class="bg-slate-900 text-blue-400 px-1 py-0.5 rounded">every</code>, and 
+          <code class="bg-slate-900 text-blue-400 px-1 py-0.5 rounded">reduce</code>.
+        </p>
+
+        <!-- Method Decision Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+          <div class="bg-slate-900 p-3 rounded-xl border border-slate-700/80">
+            <span class="text-emerald-400 font-bold block mb-1">🔍 Verification (Boolean)</span>
+            <div class="text-slate-300"><code class="text-blue-300">.some(fn)</code>: returns <code class="text-emerald-300">true</code> if ≥ 1 item matches.</div>
+            <div class="text-slate-300 mt-1"><code class="text-blue-300">.every(fn)</code>: returns <code class="text-emerald-300">true</code> only if ALL match.</div>
+          </div>
+          <div class="bg-slate-900 p-3 rounded-xl border border-slate-700/80">
+            <span class="text-amber-400 font-bold block mb-1">✂️ Transformation & Extraction</span>
+            <div class="text-slate-300"><code class="text-blue-300">.filter(fn)</code>: keeps items matching condition.</div>
+            <div class="text-slate-300 mt-1"><code class="text-blue-300">.map(fn)</code>: transforms each item (same length).</div>
+            <div class="text-slate-300 mt-1"><code class="text-blue-300">.flat()</code>: flattens nested arrays into 1D.</div>
+          </div>
+          <div class="bg-slate-900 p-3 rounded-xl border border-slate-700/80">
+            <span class="text-purple-400 font-bold block mb-1">📊 Accumulation</span>
+            <div class="text-slate-300"><code class="text-blue-300">.reduce((acc, x) => acc + x, 0)</code>: sum numbers.</div>
+            <div class="text-slate-300 mt-1"><code class="text-blue-300">.reduce((max, x) => ...)</code>: find best object!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flashcards for Task 1 -->
+      <div>
+        <h3 class="text-lg font-bold text-white mb-3">⚡ Click Cards to Reveal Solution Patterns</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-blue-400 uppercase">Pattern 1: Existential Condition</span>
+                  <h4 class="text-base font-semibold text-white mt-2">Is there an author who has at least 2 books published before 1900?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and inspect code.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-blue-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <pre class="text-xs text-emerald-300 leading-snug"><code>authors.some(author => {
+  const old = author.books.filter(b => b.year < 1900);
+  return old.length >= 2;
+});</code></pre>
+                <div class="text-xs text-slate-300">
+                  <span class="font-bold text-blue-400">Key logic:</span> Use <code class="text-blue-300">.some</code> on the outer array, then <code class="text-blue-300">.filter</code> the inner array to check count.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 uppercase">Pattern 2: Nested Universal Query</span>
+                  <h4 class="text-base font-semibold text-white mt-2">Does every author have at least one book in genre "novel"?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and inspect code.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-amber-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <pre class="text-xs text-emerald-300 leading-snug"><code>authors.every(author =>
+  author.books.some(b => b.genres.includes('novel'))
+);</code></pre>
+                <div class="text-xs text-slate-300">
+                  <span class="font-bold text-amber-400">Key logic:</span> Outer check is <code class="text-blue-300">.every()</code>; inner check is <code class="text-blue-300">.some()</code> with <code class="text-blue-300">.includes()</code>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-purple-400 uppercase">Pattern 3: Finding Best Object with Reduce</span>
+                  <h4 class="text-base font-semibold text-white mt-2">Find the author with the highest total page count (return object, not just number).</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and inspect code.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-purple-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <pre class="text-xs text-emerald-300 leading-snug"><code>const total = a => a.books.reduce((s, b) => s + b.pages, 0);
+
+const maxAuthor = authors.reduce((max, curr) => {
+  return total(curr) > total(max) ? curr : max;
+});
+// maxAuthor.name</code></pre>
+                <div class="text-xs text-slate-300">
+                  <span class="font-bold text-purple-400">Notice:</span> Do NOT provide <code class="text-blue-300">0</code> as initial value! Without an initial value, <code class="text-blue-300">max</code> starts as <code class="text-blue-300">authors[0]</code>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-rose-400 uppercase">Pattern 4: Flatten & Average Calculation</span>
+                  <h4 class="text-base font-semibold text-white mt-2">Calculate the average page count of filtered books rounded to 2 decimals.</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and inspect code.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-rose-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <pre class="text-xs text-emerald-300 leading-snug"><code>const allBooks = authors.flatMap(a => a.books);
+const filtered = allBooks.filter(b => b.year < 1900 && b.genres.includes('novel'));
+const sum = filtered.reduce((s, b) => s + b.pages, 0);
+const avg = (sum / filtered.length).toFixed(2);</code></pre>
+                <div class="text-xs text-slate-300">
+                  <span class="font-bold text-rose-400">Trap:</span> <code class="text-blue-300">.toFixed(2)</code> returns a <strong>string</strong> (e.g. <code class="text-emerald-300">"412.50"</code>). Use it right before display!
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: TASK 2 (DOM FORMS & LIVE EVENTS) -->
+    <div id="tab-t2" class="tab-content hidden space-y-6">
+
+      <!-- Exam Mindset & Architecture Notice -->
+      <div class="bg-gradient-to-r from-blue-900/60 to-slate-800 border border-blue-500/40 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-blue-500/30 text-blue-300 border border-blue-400/40">Core Exam Insight</span>
+          <span class="text-xs text-slate-300 font-semibold">Why this pattern is universal</span>
+        </div>
+        <h2 class="text-xl font-extrabold text-white">Generalizable Knowledge for Task 2 (14 Points)</h2>
+        <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+          In your actual exam, Task 2 will likely feature a different theme (e.g. <em>pizza order builder, flight ticket baggage calculator, fitness workout timer, or parcel shipping estimator</em>). 
+          <strong>Do not memorize the book story!</strong> Memorize the <strong class="text-blue-300">4 universal structural pillars</strong> below, which every ELTE Task 2 is guaranteed to test.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-slate-850 bg-slate-900 border border-slate-700/80 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="font-bold text-blue-400 text-sm flex items-center gap-1.5">
+              <span>🎛️ Pillar 1:</span> Event Types & Reading Values
+            </span>
+            <span class="text-[11px] bg-blue-950 text-blue-300 px-2 py-0.5 rounded border border-blue-800">Events</span>
+          </div>
+          <div class="text-xs text-slate-300 space-y-2">
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">1. Range Sliders & Number inputs:</span>
+              Use <code class="text-blue-300">'input'</code> (fires live on every drag/keystroke), NOT <code class="text-rose-400">'change'</code>.
+              <pre class="text-emerald-300 mt-1"><code>const val = Number(slider.value); // ALWAYS wrap in Number()!</code></pre>
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">2. Select Dropdowns:</span>
+              Use <code class="text-blue-300">'change'</code>. Read data attributes from selected option:
+              <pre class="text-emerald-300 mt-1"><code>const opt = select.selectedOptions[0];
+const pages = Number(opt.dataset.pages); // data-pages
+const img = opt.value;                   // value attribute</code></pre>
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">3. Buttons:</span>
+              Use <code class="text-blue-300">'click'</code>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-slate-850 bg-slate-900 border border-slate-700/80 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="font-bold text-amber-400 text-sm flex items-center gap-1.5">
+              <span>📋 Pillar 2:</span> Dynamic List & Validation
+            </span>
+            <span class="text-[11px] bg-amber-950 text-amber-300 px-2 py-0.5 rounded border border-amber-800">Validation</span>
+          </div>
+          <div class="text-xs text-slate-300 space-y-2">
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">The 4-Step Validation Flow:</span>
+              <pre class="text-emerald-300 mt-1"><code>const val = input.value.trim();
+// 1. Empty check
+if (val === '') return;
+// 2. Limit check
+if (list.length >= MAX) return;
+// 3. Case-insensitive duplicate check
+if (list.some(x => x.toLowerCase() === val.toLowerCase())) return;
+
+// 4. On SUCCESS: add, update DOM, and clear field!
+list.push(val);
+input.value = ''; // DO NOT clear on error!
+if (list.length >= MAX) addBtn.disabled = true;</code></pre>
+            </div>
+            <p class="text-[11px] text-slate-400">
+              ⚠️ <strong>Golden Rule:</strong> If the input is invalid/rejected, do NOT clear the input field! The user should not have to retype.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-slate-850 bg-slate-900 border border-slate-700/80 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="font-bold text-emerald-400 text-sm flex items-center gap-1.5">
+              <span>🎨 Pillar 3:</span> Dynamic Styles & Classes
+            </span>
+            <span class="text-[11px] bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800">DOM UI</span>
+          </div>
+          <div class="text-xs text-slate-300 space-y-2">
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">1. Style requires units (px, %, etc.):</span>
+              <pre class="text-emerald-300 mt-1"><code>bar.style.height = `${minutes}px`;
+box.style.width = `${speed * 20}px`;</code></pre>
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">2. Conditional Class Toggling:</span>
+              <pre class="text-emerald-300 mt-1"><code>// classList.toggle(className, booleanCondition)
+el.classList.toggle('fast', speed >= 4);
+
+// For multiple elements (NodeList):
+document.querySelectorAll('.page').forEach(page => {
+  page.classList.toggle('fast', speed >= 4);
+});</code></pre>
+            </div>
+            <p class="text-[11px] text-slate-400">
+              ⚠️ Calling <code class="text-rose-400">querySelectorAll(...).classList.add()</code> will throw a TypeError! NodeLists require <code class="text-blue-300">.forEach()</code>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-slate-850 bg-slate-900 border border-slate-700/80 rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="font-bold text-purple-400 text-sm flex items-center gap-1.5">
+              <span>⚖️ Pillar 4:</span> Calculation & Disabling Form
+            </span>
+            <span class="text-[11px] bg-purple-950 text-purple-300 px-2 py-0.5 rounded border border-purple-800">Submission</span>
+          </div>
+          <div class="text-xs text-slate-300 space-y-2">
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-amber-300 font-semibold block">Check Button Workflow:</span>
+              <pre class="text-emerald-300 mt-1"><code>// 1. Guard check
+if (list.length === 0) {
+  status.textContent = 'Add items first!';
+  return;
+}
+// 2. Unrounded comparison
+const req = (pages / speed) + (list.length * 5);
+if (available >= req) {
+  // 3. Format only for string output
+  status.textContent = `Fits! (${req.toFixed(2)} min)`;
+  // 4. Batch disable inputs on success
+  [addBtn, checkBtn, input, select, slider1, slider2].forEach(el => {
+    el.disabled = true;
+  });
+} else {
+  status.textContent = `Not enough time! (${req.toFixed(2)} min)`;
+  // Inputs remain editable!
+}</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Flashcards for Task 2 Recall -->
+      <div>
+        <h3 class="text-lg font-bold text-white mb-3">⚡ Task 2 Flashcards: Tap to Test Recall</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-blue-400 uppercase">Flashcard 1</span>
+                  <h4 class="text-base font-semibold text-white mt-2">Why must range sliders use the 'input' event instead of 'change'?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and check answer.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-blue-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <div class="text-xs text-slate-300 space-y-2">
+                  <p><strong class="text-emerald-300">'input'</strong> fires immediately and continuously on every single pixel of mouse drag or touch movement, updating displays in real-time.</p>
+                  <p><strong class="text-rose-300">'change'</strong> only fires once when the user <em>releases</em> the mouse button!</p>
+                </div>
+                <div class="text-[11px] text-blue-300 bg-slate-900 p-2 rounded">
+                  <code>slider.addEventListener('input', updateVisuals);</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-amber-400 uppercase">Flashcard 2</span>
+                  <h4 class="text-base font-semibold text-white mt-2">How do you safely extract data attributes from a &lt;select&gt; dropdown?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and check answer.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-amber-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <div class="text-xs text-slate-300 space-y-1">
+                  <p>In HTML: <code class="text-amber-300">&lt;option value="x" data-pages="160"&gt;</code></p>
+                  <p>In JS, access the currently active option:</p>
+                  <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>const opt = select.selectedOptions[0];
+const pages = Number(opt.dataset.pages);
+const title = opt.textContent;
+const val = opt.value;</code></pre>
+                </div>
+                <span class="text-[11px] text-amber-300">HTML <code>data-my-val</code> becomes JS <code>dataset.myVal</code> (camelCase).</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-emerald-400 uppercase">Flashcard 3</span>
+                  <h4 class="text-base font-semibold text-white mt-2">What is the danger of comparing with .toFixed(2)?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and check answer.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-emerald-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <div class="text-xs text-slate-300 space-y-2">
+                  <p><code class="text-rose-400">.toFixed(2)</code> returns a <strong>string</strong>, not a number!</p>
+                  <p>String comparisons are alphabetical:</p>
+                  <pre class="text-rose-300 bg-slate-950 p-1.5 rounded"><code>"100.00" < "20.00" // evaluates to TRUE! (1 < 2)</code></pre>
+                  <p class="text-emerald-300 font-semibold">Rule: Always perform comparisons on raw numbers, and apply <code>.toFixed(2)</code> only inside the final string interpolation!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard h-52" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner relative w-full h-full">
+              <div class="flashcard-front absolute inset-0 bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-purple-400 uppercase">Flashcard 4</span>
+                  <h4 class="text-base font-semibold text-white mt-2">How do you clean up and batch disable 6 different controls on form submission?</h4>
+                  <p class="text-xs text-slate-400 mt-2">Click to flip and check answer.</p>
+                </div>
+                <span class="text-xs text-slate-500 text-right">🔄 Click to flip</span>
+              </div>
+              <div class="flashcard-back absolute inset-0 bg-slate-800 border-2 border-purple-500 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                <div class="text-xs text-slate-300 space-y-2">
+                  <p>Don't write 6 repetitive lines of <code>el.disabled = true;</code>. Use an array loop:</p>
+                  <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>[
+  addBtn, checkBtn, textInput,
+  editionSelect, minuteSlider, paceSlider
+].forEach(el => el.disabled = true);</code></pre>
+                  <p class="text-purple-300">Clean, fast to type in an exam, and impossible to forget an element.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Live Interactive Simulator of Sample Test -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-4">
+          <div>
+            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+              <span>🎮 Sample Test Live Simulator: "Reading Evening Planner"</span>
+            </h2>
+            <p class="text-slate-400 text-xs mt-1">
+              Test how the 4 pillars function together in the sample scenario. Try edge cases (empty strings, duplicates, 4 items limit, slider drags).
+            </p>
+          </div>
+          <span class="text-xs font-mono bg-slate-900 text-slate-400 px-3 py-1 rounded-lg border border-slate-700">Practice Application</span>
+        </div>
+
+        <!-- Live Playground -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-900 p-5 rounded-xl border border-slate-700">
+          
+          <div class="space-y-4">
+            <div>
+              <label class="text-xs font-bold text-slate-400 uppercase">Subtasks a, b, c: Title Input</label>
+              <div class="flex gap-2 mt-1">
+                <input id="sim-input" type="text" placeholder="Enter book title..." class="bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg text-sm flex-1 focus:outline-none focus:border-blue-500">
+                <button id="sim-add-btn" onclick="simAddTitle()" class="bg-blue-600 hover:bg-blue-500 px-4 py-1.5 rounded-lg text-sm font-semibold transition disabled:opacity-40 disabled:cursor-not-allowed">Add</button>
+              </div>
+              <div class="text-xs text-slate-400 mt-1">Titles count: <span id="sim-count" class="font-bold text-blue-400">0</span> / 4</div>
+              <ul id="sim-list" class="mt-2 space-y-1 text-xs text-slate-300 list-decimal list-inside bg-slate-800/50 p-2 rounded-lg min-h-[48px]"></ul>
+            </div>
+
+            <div>
+              <label class="text-xs font-bold text-slate-400 uppercase">Subtask d: Edition Select (<code class="text-blue-300">'change'</code> event)</label>
+              <select id="sim-edition" class="w-full mt-1 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg text-sm text-slate-200">
+                <option value="Hamlet" data-pages="160">William Shakespeare: Hamlet (160 pages)</option>
+                <option value="Metamorphosis" data-pages="96">Franz Kafka: The Metamorphosis (96 pages)</option>
+                <option value="Emma" data-pages="544">Jane Austen: Emma (544 pages)</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-bold text-slate-400 uppercase">
+                <span>Subtask e: Available Time (<code class="text-blue-300">'input'</code>)</span>
+                <span id="sim-min-val" class="text-blue-400 font-mono">60 min</span>
+              </div>
+              <input id="sim-minutes" type="range" min="30" max="240" value="60" oninput="simChangeMinutes()" class="w-full mt-1 accent-blue-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-bold text-slate-400 uppercase">
+                <span>Subtask f: Reading Pace (<code class="text-blue-300">'input'</code>)</span>
+                <span id="sim-pace-val" class="text-blue-400 font-mono">2 pages/min</span>
+              </div>
+              <input id="sim-pace" type="range" min="1" max="6" value="2" oninput="simChangePace()" class="w-full mt-1 accent-blue-500">
+            </div>
+
+            <button id="sim-check-btn" onclick="simCheckProgram()" class="w-full bg-emerald-600 hover:bg-emerald-500 py-2 rounded-lg font-bold text-sm transition">
+              Subtasks g & h: Check Program
+            </button>
+            <div id="sim-status" class="text-xs font-bold min-h-[20px] text-slate-400"></div>
+          </div>
+
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/80 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-slate-400 uppercase block mb-3">Live Visual Elements Reaction</span>
+              
+              <div class="mb-4">
+                <div class="text-xs text-slate-400 mb-1">Time bar height (<code class="text-blue-300">style.height = `${min}px`</code>):</div>
+                <div class="h-28 bg-slate-900 border border-slate-700 rounded-lg flex items-end p-2">
+                  <div id="sim-time-bar" style="height: 60px;" class="w-8 bg-blue-500 rounded transition-all duration-75"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-xs text-slate-400 mb-1">Pages width (<code class="text-blue-300">speed * 20px</code>) & <code class="text-blue-300">fast</code> class (≥ 4):</div>
+                <div class="h-16 bg-slate-900 border border-slate-700 rounded-lg flex items-center justify-center gap-1 p-2">
+                  <div id="sim-page-1" style="width: 40px;" class="h-10 bg-blue-200 border-2 border-blue-500 rounded-sm transition-all duration-75"></div>
+                  <div id="sim-page-2" style="width: 40px;" class="h-10 bg-blue-200 border-2 border-blue-500 rounded-sm transition-all duration-75"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 p-3 rounded-lg border border-slate-700 text-xs text-slate-400 mt-4">
+              <span class="font-bold text-slate-300 block mb-1">Formula in action:</span>
+              <code class="text-emerald-300">requiredTime = (pages / speed) + (titles * 5)</code>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: TASK 3 (2D GRIDS & DELEGATION) -->
+    <div id="tab-t3" class="tab-content hidden space-y-6">
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">🗺️ Task 3: 2D Grids, Moving Elements & Event Delegation</h2>
+        <p class="text-slate-300 text-sm mb-4">
+          Understand the mechanics that students often find hardest: <strong>Event Delegation</strong> and why <strong>`appendChild` moves elements instead of copying them</strong>.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+            <h3 class="font-bold text-blue-400 text-sm mb-2">1. The Coordinate Access Trick</h3>
+            <p class="text-slate-300 mb-2">When you create a standard table:</p>
+            <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>const cell = table.rows[row].cells[col];</code></pre>
+            <p class="text-slate-400 mt-2">
+              You don't need <code class="text-blue-300">querySelectorAll</code> or math indexing! The HTML Table element maintains its own 2D array of rows and cells.
+            </p>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+            <h3 class="font-bold text-amber-400 text-sm mb-2">2. Why `appendChild` MOVES Elements</h3>
+            <p class="text-slate-300 mb-2">DOM nodes can only exist in <strong>one position</strong> at a time:</p>
+            <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>// selectedBook is currently in Cell (0,0)
+newCell.appendChild(selectedBook);
+// selectedBook is automatically detached from (0,0)
+// and attached to newCell!</code></pre>
+            <p class="text-slate-400 mt-2">
+              No need to call <code class="text-rose-400">oldCell.removeChild(...)</code> manually!
+            </p>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+            <h3 class="font-bold text-purple-400 text-sm mb-2">3. Event Delegation with `delegate()`</h3>
+            <p class="text-slate-300 mb-2">Instead of adding 20 event listeners to every button and cell:</p>
+            <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>delegate(table, '.book', 'click', (event, book) => {
+  if (book.closest('.shelf')) return; // ignore books on shelf!
+  // selection toggle logic...
+});</code></pre>
+            <p class="text-slate-400 mt-2">
+              One single listener on <code class="text-blue-300">table</code> handles clicks even as books move across the board.
+            </p>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+            <h3 class="font-bold text-emerald-400 text-sm mb-2">4. Live Victory Condition Checking</h3>
+            <p class="text-slate-300 mb-2">Query the DOM directly to know if all books are placed:</p>
+            <pre class="text-emerald-300 bg-slate-950 p-2 rounded"><code>const all = table.querySelectorAll('.book').length;
+const shelved = table.querySelectorAll('.shelf .book').length;
+
+if (all === shelved) {
+  status.textContent = 'All books are in place!';
+}</code></pre>
+            <p class="text-slate-400 mt-2">
+              No extra state variables needed—the DOM itself is the single source of truth.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: TRAP HUNTER & FINAL EXAM QUIZ -->
+    <div id="tab-quiz" class="tab-content hidden space-y-6">
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">🧠 Trap Hunter & Final Exam Quiz</h2>
+        <p class="text-slate-300 text-sm mb-4">
+          Answer the questions below to test your recall on the most common traps and mistakes that cost students points in the exam!
+        </p>
+
+        <!-- Quiz Container -->
+        <div id="quiz-questions" class="space-y-4">
+          
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 question-card" data-answered="false">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-blue-400 uppercase">Question 1 (Syntax Trap)</span>
+              <span class="status-badge text-xs px-2 py-0.5 rounded font-semibold bg-slate-800 text-slate-400">Unanswered</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-3">What happens when you execute this code inside an event listener?</h4>
+            <pre class="text-xs text-rose-300 bg-slate-950 p-2 rounded mb-3"><code>const title = workInput.value.trim();
+if (title = "") {
+  return;
+}</code></pre>
+            <div class="space-y-2 text-xs">
+              <button onclick="checkAnswer(this, 1, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                A) It checks if title is empty and returns normally.
+              </button>
+              <button onclick="checkAnswer(this, 1, true)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                B) It crashes with a TypeError ("Assignment to constant variable") because a single '=' is an assignment, not comparison!
+              </button>
+              <button onclick="checkAnswer(this, 1, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                C) It prints a warning in the console but continues running.
+              </button>
+            </div>
+            <div class="explanation hidden text-xs mt-3 p-3 rounded-lg bg-slate-850 border border-slate-700 text-slate-300"></div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 question-card" data-answered="false">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-amber-400 uppercase">Question 2 (Event Types)</span>
+              <span class="status-badge text-xs px-2 py-0.5 rounded font-semibold bg-slate-800 text-slate-400">Unanswered</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-3">Why should you use the <code class="text-blue-300">'input'</code> event instead of <code class="text-blue-300">'change'</code> for range sliders?</h4>
+            <div class="space-y-2 text-xs">
+              <button onclick="checkAnswer(this, 2, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                A) 'change' does not work at all on range inputs in modern browsers.
+              </button>
+              <button onclick="checkAnswer(this, 2, true)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                B) 'input' fires continuously in real-time as you drag the slider thumb; 'change' only fires when you release the mouse button.
+              </button>
+              <button onclick="checkAnswer(this, 2, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                C) 'input' gives a number value, while 'change' gives a string.
+              </button>
+            </div>
+            <div class="explanation hidden text-xs mt-3 p-3 rounded-lg bg-slate-850 border border-slate-700 text-slate-300"></div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 question-card" data-answered="false">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-purple-400 uppercase">Question 3 (DOM NodeList Trap)</span>
+              <span class="status-badge text-xs px-2 py-0.5 rounded font-semibold bg-slate-800 text-slate-400">Unanswered</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-3">What happens when you run <code class="text-rose-300">document.querySelectorAll('.page').classList.add('fast')</code>?</h4>
+            <div class="space-y-2 text-xs">
+              <button onclick="checkAnswer(this, 3, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                A) All matching elements receive the 'fast' class.
+              </button>
+              <button onclick="checkAnswer(this, 3, true)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                B) Error: Cannot read properties of undefined (reading 'add') because NodeList has no classList property! You must loop with .forEach().
+              </button>
+              <button onclick="checkAnswer(this, 3, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                C) Only the first matching element receives the class.
+              </button>
+            </div>
+            <div class="explanation hidden text-xs mt-3 p-3 rounded-lg bg-slate-850 border border-slate-700 text-slate-300"></div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 question-card" data-answered="false">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-emerald-400 uppercase">Question 4 (DOM Movement)</span>
+              <span class="status-badge text-xs px-2 py-0.5 rounded font-semibold bg-slate-800 text-slate-400">Unanswered</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-3">If element `btn` is currently inside `cellA`, what happens when you call `cellB.appendChild(btn)`?</h4>
+            <div class="space-y-2 text-xs">
+              <button onclick="checkAnswer(this, 4, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                A) `btn` is cloned; both `cellA` and `cellB` will have a copy of `btn`.
+              </button>
+              <button onclick="checkAnswer(this, 4, true)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                B) `btn` is MOVED from `cellA` to `cellB` automatically.
+              </button>
+              <button onclick="checkAnswer(this, 4, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                C) The browser throws an error unless you remove `btn` from `cellA` first.
+              </button>
+            </div>
+            <div class="explanation hidden text-xs mt-3 p-3 rounded-lg bg-slate-850 border border-slate-700 text-slate-300"></div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 question-card" data-answered="false">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-blue-400 uppercase">Question 5 (Array Reducer Trap)</span>
+              <span class="status-badge text-xs px-2 py-0.5 rounded font-semibold bg-slate-800 text-slate-400">Unanswered</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-3">You want to find the author object with the most total pages using `.reduce`. What should the initial value argument be?</h4>
+            <div class="space-y-2 text-xs">
+              <button onclick="checkAnswer(this, 5, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                A) 0
+              </button>
+              <button onclick="checkAnswer(this, 5, true)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                B) Omit the initial value so the accumulator starts as the first author object (authors[0]).
+              </button>
+              <button onclick="checkAnswer(this, 5, false)" class="w-full text-left p-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 transition">
+                C) An empty string ""
+              </button>
+            </div>
+            <div class="explanation hidden text-xs mt-3 p-3 rounded-lg bg-slate-850 border border-slate-700 text-slate-300"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabId).classList.remove('hidden');
+      document.getElementById('btn-' + tabId).classList.add('active');
+    }
+
+    const simTitles = [];
+    function simAddTitle() {
+      const input = document.getElementById('sim-input');
+      const val = input.value.trim();
+      if (val === '') return;
+      if (simTitles.length >= 4) return;
+      if (simTitles.some(t => t.toLowerCase() === val.toLowerCase())) return;
+
+      simTitles.push(val);
+      input.value = '';
+      
+      const list = document.getElementById('sim-list');
+      list.innerHTML = simTitles.map(t => `<li>${t}</li>`).join('');
+      document.getElementById('sim-count').textContent = simTitles.length;
+
+      if (simTitles.length >= 4) {
+        document.getElementById('sim-add-btn').disabled = true;
+      }
+    }
+
+    function simChangeMinutes() {
+      const min = document.getElementById('sim-minutes').value;
+      document.getElementById('sim-min-val').textContent = min + ' min';
+      document.getElementById('sim-time-bar').style.height = min + 'px';
+    }
+
+    function simChangePace() {
+      const p = Number(document.getElementById('sim-pace').value);
+      document.getElementById('sim-pace-val').textContent = p + ' pages/min';
+      
+      const p1 = document.getElementById('sim-page-1');
+      const p2 = document.getElementById('sim-page-2');
+      const w = (p * 20) + 'px';
+      
+      p1.style.width = w;
+      p2.style.width = w;
+
+      if (p >= 4) {
+        p1.classList.add('!bg-blue-600');
+        p2.classList.add('!bg-blue-600');
+      } else {
+        p1.classList.remove('!bg-blue-600');
+        p2.classList.remove('!bg-blue-600');
+      }
+    }
+
+    function simCheckProgram() {
+      const status = document.getElementById('sim-status');
+      if (simTitles.length === 0) {
+        status.textContent = 'Add at least one title first!';
+        status.className = 'text-xs font-bold text-amber-400 min-h-[20px]';
+        return;
+      }
+
+      const sel = document.getElementById('sim-edition');
+      const pages = Number(sel.selectedOptions[0].dataset.pages);
+      const speed = Number(document.getElementById('sim-pace').value);
+      const min = Number(document.getElementById('sim-minutes').value);
+
+      const req = (pages / speed) + (simTitles.length * 5);
+      const fits = min >= req;
+
+      if (fits) {
+        status.textContent = `The program fits! (${req.toFixed(2)} minutes)`;
+        status.className = 'text-xs font-bold text-emerald-400 min-h-[20px]';
+        document.getElementById('sim-add-btn').disabled = true;
+        document.getElementById('sim-check-btn').disabled = true;
+        document.getElementById('sim-minutes').disabled = true;
+        document.getElementById('sim-pace').disabled = true;
+        document.getElementById('sim-edition').disabled = true;
+        document.getElementById('sim-input').disabled = true;
+      } else {
+        status.textContent = `Not enough time! (${req.toFixed(2)} minutes)`;
+        status.className = 'text-xs font-bold text-rose-400 min-h-[20px]';
+      }
+    }
+
+    let correctCount = 0;
+    let answeredCount = 0;
+    const totalQuestions = 5;
+
+    const explanations = {
+      1: "Using '=' is an assignment operator! Since 'title' was declared as a 'const', trying to assign to it throws a fatal TypeError. You must use '===' for comparison.",
+      2: "The 'input' event triggers live and continuously as the user drags the slider, providing smooth UI updates. The 'change' event waits until the drag ends and mouse is released.",
+      3: "document.querySelectorAll returns a NodeList (collection). A NodeList does not possess classList. You must iterate using .forEach(el => el.classList.add(...)).",
+      4: "In the DOM specification, a node cannot exist in two places at once. Calling parent.appendChild(existingNode) automatically unlinks it from its current parent and moves it.",
+      5: "If you pass 0 as the initial value, the first comparison compares an author object with the number 0! Omitting the initial value makes reduce start with accumulator = authors[0]."
+    };
+
+    function checkAnswer(btn, qNum, isCorrect) {
+      const card = btn.closest('.question-card');
+      if (card.dataset.answered === 'true') return;
+      card.dataset.answered = 'true';
+
+      answeredCount++;
+      const badge = card.querySelector('.status-badge');
+      const exp = card.querySelector('.explanation');
+
+      if (isCorrect) {
+        correctCount++;
+        btn.classList.add('!bg-emerald-600', '!text-white', '!border-emerald-500');
+        badge.textContent = 'Correct';
+        badge.className = 'status-badge text-xs px-2 py-0.5 rounded font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+      } else {
+        btn.classList.add('!bg-rose-600', '!text-white', '!border-rose-500');
+        badge.textContent = 'Incorrect';
+        badge.className = 'status-badge text-xs px-2 py-0.5 rounded font-semibold bg-rose-500/20 text-rose-400 border border-rose-500/30';
+      }
+
+      exp.textContent = explanations[qNum];
+      exp.classList.remove('hidden');
+
+      document.getElementById('global-score').textContent = `${correctCount} / ${answeredCount}`;
+    }
+  </script>
+</body>
+</html>

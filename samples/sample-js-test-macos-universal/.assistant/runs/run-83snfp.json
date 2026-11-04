@@ -1,0 +1,726 @@
+{
+  "summary": {
+    "status": "failed",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "earnedPoints": 9,
+    "maxPoints": 14,
+    "percentage": 64
+  },
+  "suites": [
+    {
+      "title": "chromium",
+      "tests": [],
+      "suites": [
+        {
+          "title": "test.spec.ts",
+          "tests": [],
+          "suites": [
+            {
+              "title": "3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "3a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Táblázat generálása",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Táblázat generálása",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(1).locator('td')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(2).locator('td')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(3).locator('td')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3b",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "b. Polcok",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-1-1",
+                          "name": "Shelf osztály",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map td.shelf')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map tr').first().locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map tr').nth(1).locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map tr').nth(2).locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map tr').nth(3).locator('td').nth(4)",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-1-2",
+                          "name": "Szerző",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map tr').first().locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map tr').nth(1).locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map tr').nth(2).locator('td').nth(4)",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map tr').nth(3).locator('td').nth(4)",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3c",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "c. Könyvek",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-1-1",
+                          "name": "Gomb, cím és title",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-1-2",
+                          "name": "Pozíció és szerző",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').first().locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(1).locator('button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(1).locator('td').first().locator('button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(1).locator('td').nth(1).locator('button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(2).locator('td').first().locator('button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(2).locator('td').nth(1).locator('button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3d",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "d. Kijelölés",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-2-1",
+                          "name": "Ki-be kapcsolás",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"not toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-2",
+                          "name": "Egyetlen kijelölés",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"not toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map .book.selected')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3e",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "e. Asztalon mozgatás",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-2-1",
+                          "name": "Áthelyezés üres cellába",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })\nExpected: 1\nReceived: 0\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 1000ms\n  - waiting for locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })\n    5 × locator resolved to 0 elements\n      - unexpected value \"0\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveCount(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-2",
+                          "name": "Üres kijelölés és foglalt cella",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').first().locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(1).locator('button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(1).locator('td').first().locator('button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Sonnets' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(1).locator('td').nth(1).locator('button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'The Trial' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(2).locator('td').first().locator('button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'The Metamorphosis' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').nth(2).locator('td').nth(1).locator('button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'One Hundred Years of Solitude' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').first().locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').first().locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(1).locator('button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Hamlet' })",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3g",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "g. Delegálás",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-3-1",
+                          "name": "Könyvkattintás",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"not toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-3-2",
+                          "name": "Cellakattintás",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })\nExpected: 1\nReceived: 0\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 1000ms\n  - waiting for locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })\n    5 × locator resolved to 0 elements\n      - unexpected value \"0\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(2).locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveCount(expected) failed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "3f",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "f. Polcra helyezés",
+                      "status": "passed",
+                      "score": 0,
+                      "maxScore": 3,
+                      "parts": [
+                        {
+                          "id": "task-2-1",
+                          "name": "Megfelelő szerző és több könyv",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })\nExpected: 1\nReceived: 0\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 1000ms\n  - waiting for locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })\n    5 × locator resolved to 0 elements\n      - unexpected value \"0\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').first().locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveCount(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-2",
+                          "name": "Polcon lévő könyv rögzített",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })\nExpected: 1\nReceived: 0\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 1000ms\n  - waiting for locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })\n    5 × locator resolved to 0 elements\n      - unexpected value \"0\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"not toHaveClass\" locator('#map button.book').filter({ hasText: 'Emma' })",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#map tr').first().locator('td').nth(4).locator('button.book').filter({ hasText: 'Emma' })",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveCount(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-3",
+                          "name": "Befejezés üzenete",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveText(expected) failed\n\nLocator:  locator('#status')\nExpected: \"All books are in place!\"\nReceived: \"\"\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 1000ms\n  - waiting for locator('#status')\n    5 × locator resolved to <p id=\"status\" role=\"status\"></p>\n      - unexpected value \"\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveText(expected) failed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

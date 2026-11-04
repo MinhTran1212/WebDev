@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "test": "cross-env NODE_PRESERVE_SYMLINKS=1 PLAYWRIGHT_JSON_OUTPUT_NAME=../results.json playwright test",
+    "test:grep": "npm run test -- -g"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1",
+    "serve": "^14.2.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "cross-env": "^10.1.0",
+    "typescript": "^7.0.2"
+  }
+}

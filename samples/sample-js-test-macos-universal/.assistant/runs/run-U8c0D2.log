@@ -1,0 +1,27 @@
+[WebServer] (node:67706) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 3 workers
+
+(node:67708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67707) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67709) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67709) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67707) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › ../test.spec.ts:163:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2a (455ms)
+  ✓  3 [chromium] › ../test.spec.ts:202:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2c (663ms)
+  ✓  4 [chromium] › ../test.spec.ts:220:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2d (248ms)
+  ✓  2 [chromium] › ../test.spec.ts:170:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2b (785ms)
+  ✓  5 [chromium] › ../test.spec.ts:239:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2e (285ms)
+  ✓  6 [chromium] › ../test.spec.ts:267:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2f (317ms)
+  ✓  8 [chromium] › ../test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h (300ms)
+  ✓  7 [chromium] › ../test.spec.ts:302:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2g (1.2s)
+
+  8 passed (3.3s)

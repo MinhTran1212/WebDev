@@ -1,0 +1,25 @@
+[WebServer] (node:68032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 3 workers
+
+(node:68034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68035) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68035) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1a (403ms)
+  ✓  1 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1b (392ms)
+  ✓  2 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1c (433ms)
+  ✓  4 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1d (295ms)
+  ✓  5 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1e (294ms)
+  ✓  6 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1f (318ms)
+
+  6 passed (2.1s)

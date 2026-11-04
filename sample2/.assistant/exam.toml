@@ -1,0 +1,25 @@
+[exam]
+id = "wp-js-2026-27-1-a"
+title_hu = "JavaScript zárthelyi 2026-27-1 - A"
+title_en = "JavaScript exam 2026-27-1 - A"
+folder = "Starter"
+
+[zip]
+name_pattern = "{neptun}_{exam_id}.zip"
+exclude = [ "README-*.md", "node_modules/", ".git/", ".vscode/", ".idea/", "dist/", "build/", "playwright-report/", "test-results/" ]
+required_files = []
+max_size_mb = 20
+
+[tester]
+enabled = true
+kind = "template"
+install = "bundled"
+dir = "tester"
+tasks = [ "task-1", "task-2", "task-3" ]
+browser = "auto"
+workers = 3
+timeout_s = 120
+install_timeout_s = 300
+browser_timeout_s = 900
+
+[requirements]

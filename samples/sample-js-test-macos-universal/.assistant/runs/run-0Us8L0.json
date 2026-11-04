@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "status": "failed",
+    "total": 6,
+    "passed": 2,
+    "failed": 4,
+    "earnedPoints": 3,
+    "maxPoints": 12,
+    "percentage": 25
+  },
+  "suites": [
+    {
+      "title": "chromium",
+      "tests": [],
+      "suites": [
+        {
+          "title": "test.spec.ts",
+          "tests": [],
+          "suites": [
+            {
+              "title": "1. feladat - Könyvtári körkép / Task 1 - Library Overview",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "1b",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "b. Minden szerzőnek van regénye",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "b. Minden szerzőnek van regénye",
+                          "success": true,
+                          "points": 2,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Legalább két régi könyv",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Legalább két régi könyv",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1d",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "d. Összes oldalszám",
+                      "status": "failed",
+                      "score": 0,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "d. Összes oldalszám",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"4819\"\nReceived: \"\"",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "failed",
+                              "error": "Error: expect(received).toBe(expected) // Object.is equality"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1c",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "c. Hosszú regények szerzői",
+                      "status": "failed",
+                      "score": 0,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "c. Hosszú regények szerzői",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 4\n+ Received  + 1\n\n- Array [\n-   \"Jane Austen\",\n-   \"Leo Tolstoy\",\n- ]\n+ Array []",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toEqual\"",
+                              "status": "failed",
+                              "error": "Error: expect(received).toEqual(expected) // deep equality"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1e",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "e. Legtöbb oldal szerzője",
+                      "status": "failed",
+                      "score": 0,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "e. Legtöbb oldal szerzője",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Leo Tolstoy\"\nReceived: \"\"",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "failed",
+                              "error": "Error: expect(received).toBe(expected) // Object.is equality"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "1f",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "f. Régi regények átlaga",
+                      "status": "failed",
+                      "score": 0,
+                      "maxScore": 3,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "f. Régi regények átlaga",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"766.25\"\nReceived: \"\"",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "failed",
+                              "error": "Error: expect(received).toBe(expected) // Object.is equality"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

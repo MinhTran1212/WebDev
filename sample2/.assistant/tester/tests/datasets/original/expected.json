@@ -1,0 +1,98 @@
+{
+  "task-1": {
+    "a": 10,
+    "b": true,
+    "c": true,
+    "d": [
+      "Apollo 11",
+      "Voyager 1",
+      "Hubble",
+      "Artemis I"
+    ],
+    "e": [
+      "Apollo 11",
+      "Voyager 1",
+      "Hubble",
+      "Mars Express",
+      "Rosetta",
+      "Chandrayaan-2",
+      "Tianwen-1",
+      "Artemis I",
+      "Luna 25"
+    ],
+    "f": "Hubble"
+  },
+  "task-3": {
+    "types": [
+      "rocky planet",
+      "gas giant",
+      "ice giant"
+    ],
+    "planets": [
+      {
+        "name": "Mercury",
+        "typeIndex": 0,
+        "orbit": 53,
+        "slider": 53,
+        "size": 11,
+        "hasRings": false
+      },
+      {
+        "name": "Venus",
+        "typeIndex": 0,
+        "orbit": 73,
+        "slider": 73,
+        "size": 14,
+        "hasRings": false
+      },
+      {
+        "name": "Earth",
+        "typeIndex": 0,
+        "orbit": 86,
+        "slider": 86,
+        "size": 14,
+        "hasRings": false
+      },
+      {
+        "name": "Mars",
+        "typeIndex": 0,
+        "orbit": 106,
+        "slider": 106,
+        "size": 12,
+        "hasRings": false
+      },
+      {
+        "name": "Jupiter",
+        "typeIndex": 1,
+        "orbit": 195,
+        "slider": 195,
+        "size": 36,
+        "hasRings": true
+      },
+      {
+        "name": "Saturn",
+        "typeIndex": 1,
+        "orbit": 265,
+        "slider": 265,
+        "size": 33,
+        "hasRings": true
+      },
+      {
+        "name": "Uranus",
+        "typeIndex": 2,
+        "orbit": 375,
+        "slider": 375,
+        "size": 24,
+        "hasRings": true
+      },
+      {
+        "name": "Neptune",
+        "typeIndex": 2,
+        "orbit": 469,
+        "slider": 469,
+        "size": 23,
+        "hasRings": true
+      }
+    ]
+  }
+}

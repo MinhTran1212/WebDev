@@ -1,0 +1,492 @@
+{
+  "summary": {
+    "status": "failed",
+    "total": 8,
+    "passed": 7,
+    "failed": 1,
+    "earnedPoints": 8,
+    "maxPoints": 14,
+    "percentage": 57
+  },
+  "suites": [
+    {
+      "title": "chromium",
+      "tests": [],
+      "suites": [
+        {
+          "title": "test.spec.ts",
+          "tests": [],
+          "suites": [
+            {
+              "title": "2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner",
+              "tests": [],
+              "suites": [
+                {
+                  "title": "2a",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "a. Cím felvétele",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "a. Cím felvétele",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#reading-list li')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2c",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "c. Darabszám és kapacitás",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "c. Darabszám és kapacitás",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeDisabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('#reading-list li')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#work-count')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2d",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "d. Kiadás borítója",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "d. Kiadás borítója",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#cover')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#cover')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveAttribute\" locator('#cover')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2b",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "b. Címek ellenőrzése",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-1-1",
+                          "name": "Trim és üres cím",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#reading-list li')",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-1-2",
+                          "name": "Duplikáció és mező ürítése",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveValue\" locator('#work-input')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#reading-list li')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveValue\" locator('#work-input')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#reading-list li')",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2e",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "e. Időkeret",
+                      "status": "passed",
+                      "score": 2,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-2-1",
+                          "name": "Kijelző",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#minutes-value')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#minutes-value')",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-2",
+                          "name": "Oszlop magassága",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBe\"",
+                              "status": "passed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2f",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "f. Olvasási sebesség",
+                      "status": "passed",
+                      "score": 1,
+                      "maxScore": 2,
+                      "parts": [
+                        {
+                          "id": "task-3-1",
+                          "name": "Kijelző és szélesség",
+                          "success": true,
+                          "points": 1,
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#pace-value')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toEqual\"",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#pace-value')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toEqual\"",
+                              "status": "passed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-3-2",
+                          "name": "Fast osztály",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveClass(expected) failed\n\nLocator: locator('span.page').first()\nExpected pattern: /(^|\\s)fast(\\s|$)/\nReceived string:  \"page\"\nTimeout: 1000ms\n\nCall log:\n  - Expect \"toHaveClass\" with timeout 1000ms\n  - waiting for locator('span.page').first()\n    5 × locator resolved to <span class=\"page\"></span>\n      - unexpected value \"page\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveCount\" locator('span.page')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveClass\" locator('span.page').first()",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveClass(expected) failed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2h",
+                  "tests": [
+                    {
+                      "type": "binary",
+                      "title": "h. Vezérlők letiltása",
+                      "status": "failed",
+                      "score": 0,
+                      "maxScore": 1,
+                      "parts": [
+                        {
+                          "id": "part-1",
+                          "name": "h. Vezérlők letiltása",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toBeDisabled() failed\n\nLocator:  locator('#minutes')\nExpected: disabled\nReceived: enabled\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toBeDisabled\" with timeout 1000ms\n  - waiting for locator('#minutes')\n    5 × locator resolved to <input min=\"30\" max=\"240\" value=\"60\" id=\"minutes\" type=\"range\"/>\n      - unexpected value \"enabled\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#minutes')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#pace')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#edition')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#work-input')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#add-work')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeEnabled\" locator('#check')",
+                              "status": "passed"
+                            },
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toBeDisabled\" locator('#minutes')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toBeDisabled() failed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "2g",
+                  "tests": [
+                    {
+                      "type": "additive",
+                      "title": "g. Program ellenőrzése",
+                      "status": "passed",
+                      "score": 0,
+                      "maxScore": 4,
+                      "parts": [
+                        {
+                          "id": "task-2-1",
+                          "name": "Üres lista",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveText(expected) failed\n\nLocator:  locator('#status')\nExpected: \"Add at least one title first!\"\nReceived: \"\"\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 1000ms\n  - waiting for locator('#status')\n    5 × locator resolved to <p id=\"status\" role=\"status\"></p>\n      - unexpected value \"\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveText(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-2",
+                          "name": "Idő számítása",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('#status')\nExpected substring: \"62.67\"\nReceived string:    \"\"\nTimeout: 1000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 1000ms\n  - waiting for locator('#status')\n    5 × locator resolved to <p id=\"status\" role=\"status\"></p>\n      - unexpected value \"\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toContainText\" locator('#status')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toContainText(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-3",
+                          "name": "Döntés és ready osztály",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveText(expected) failed\n\nLocator:  locator('#status')\nExpected: \"Not enough time! (85.00 minutes)\"\nReceived: \"\"\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 1000ms\n  - waiting for locator('#status')\n    5 × locator resolved to <p id=\"status\" role=\"status\"></p>\n      - unexpected value \"\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveText(expected) failed"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "task-2-4",
+                          "name": "Kerekítés és pontos összehasonlítás",
+                          "success": false,
+                          "points": 0,
+                          "error": "expect(locator).toHaveText(expected) failed\n\nLocator:  locator('#status')\nExpected: \"Not enough time! (80.00 minutes)\"\nReceived: \"\"\nTimeout:  1000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 1000ms\n  - waiting for locator('#status')\n    5 × locator resolved to <p id=\"status\" role=\"status\"></p>\n      - unexpected value \"\"\n",
+                          "steps": [
+                            {
+                              "type": "expect",
+                              "title": "Expect \"toHaveText\" locator('#status')",
+                              "status": "failed",
+                              "error": "Error: expect(locator).toHaveText(expected) failed"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

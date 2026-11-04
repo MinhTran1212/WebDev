@@ -1,0 +1,40 @@
+[WebServer] (node:68097) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 21 tests using 3 workers
+
+(node:68098) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68098) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1b (413ms)
+  ✓   2 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1a (387ms)
+  ✓   3 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1c (412ms)
+  ✓   6 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1f (243ms)
+  ✓   4 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1d (272ms)
+  ✓   5 [chromium] › ../test.spec.ts:83:9 › 1. feladat - Könyvtári körkép / Task 1 - Library Overview › 1e (274ms)
+  ✓   7 [chromium] › ../test.spec.ts:163:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2a (348ms)
+  ✓   9 [chromium] › ../test.spec.ts:202:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2c (493ms)
+  ✓  10 [chromium] › ../test.spec.ts:220:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2d (180ms)
+  ✓   8 [chromium] › ../test.spec.ts:170:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2b (546ms)
+  ✓  11 [chromium] › ../test.spec.ts:239:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2e (277ms)
+  ✓  12 [chromium] › ../test.spec.ts:267:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2f (306ms)
+  ✓  15 [chromium] › ../test.spec.ts:450:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3a (259ms)
+  ✓  14 [chromium] › ../test.spec.ts:377:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2h (395ms)
+  ✓  16 [chromium] › ../test.spec.ts:459:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3b (256ms)
+  ✓  17 [chromium] › ../test.spec.ts:487:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3c (326ms)
+  ✓  18 [chromium] › ../test.spec.ts:523:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3d (321ms)
+  ✓  13 [chromium] › ../test.spec.ts:302:7 › 2. feladat - Olvasóest-tervező / Task 2 - Reading Evening Planner › 2g (1.3s)
+  ✓  19 [chromium] › ../test.spec.ts:551:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3e (518ms)
+  ✓  20 [chromium] › ../test.spec.ts:590:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3f (438ms)
+  ✓  21 [chromium] › ../test.spec.ts:651:7 › 3. feladat - Könyvek visszapakolása / Task 3 - Putting the Books Back › 3g (420ms)
+
+  21 passed (4.4s)
