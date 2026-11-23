@@ -1,0 +1,31 @@
+create an empty file  .sqlite extension
+
+have a vscode extension for sqlite databases
+
+sqlite3 editor
+
+create a table
+
+CREATE TABLE people (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL
+);
+
+select 
+insert 
+update 
+delete 
+no aggregations, no joins, etc
+
+INSERT INTO table (field1, field2) VALUES (:value1, :value2);
+
+example POST
+$pdo = new PDO("sqlite:database.sqlite");
+$stmt = $pdo -> prepare("INSERT INTO people (name, age) VALUES (:name, :age)");
+$stmt -> execute(["name" => $name, "age" => $age]);
+
+example GET
+$pdo = new PDO("sqlite:database.sqlite");
+$stmt = $pdo -> prepare("SELECT id, name, age FROM people");
+$stmt -> execute();
